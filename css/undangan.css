@@ -1,0 +1,680 @@
+:root {
+    --pink: #f14e95;
+    --bg:   #0a0a0a;
+    --abu:  #222;
+    --abuPrimary: #808080;
+    --shadow: 0 2px 2px rgb( 0 0 0 / 0.7);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 4000px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://media.istockphoto.com/id/1015900642/id/foto/gambar-pasangan-berpegangan-tangan.jpg?s=612x612&w=0&k=20&c=X5eJI19XLF5uscvxetc8hH4s_xz9apLluUtBlaP3fN4=);
+    z-index: -1;
+    /* filter: grayscale(); */
+    background-size: cover; 
+    /* pakai background-size ini agar gambar menjadi satu gambar full */
+    background-position: center;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h1, .hero h4 .hero p {
+    text-shadow: var(--shadow);
+    /* PAKAI INI AGAR GAMBAR TIDAK FLET DENGAN BACKGROUND / NYARU */
+}
+
+.hero h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 6rem;
+    text-shadow: var(--shadow);
+
+}
+
+.hero h4 {
+    font-size: 1.6rem;
+    text-shadow: var(--shadow);
+}
+
+.hero p {
+    font-size: 1.4rem;
+}
+
+.hero a {
+    color: var(--pink);
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+    background-color: var(--pink);
+}
+
+
+/* Navbar No Bootstrap start */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: #0a0a0a;
+    background-color: rgba(255, 225, 255, 0.3) !important;
+    backdrop-filter: blur(5px) !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: 'Sacramento', cursive;
+}
+
+.navbar .navbar-logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f14e95;
+}
+
+.navbar .navbar-logo span {
+    color: var(--bg);
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    align-items: center;
+}
+
+.navbar .navbar-nav a{
+    color: var(--bg);
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar .navbar-extra #menu-link {
+    display: none;
+}
+
+/* Navbar No Bootstrap end */
+
+/* Component Home start */
+.home {
+    background-image: url(https://img.freepik.com/free-vector/hand-drawn-flowers-background_79603-1546.jpg?w=740&t=st=1690296090~exp=1690296690~hmac=89f4c4fafa2c30534cda6446f7c7dde2d18605b210eedc1d1e3c59290d6cb75e);
+    /* Pakai background-image FLORAL PATTERN */
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.home h2,
+.story h2,
+.rsvp h2,
+.gifts h2 {
+    color: var(--pink);
+    font-family: 'Sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.home h3 {
+    color: #444;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.home p,
+.story p {
+    font-size: 1.1rem;
+    counter-reset: #666;
+}
+/* Component Home end */
+
+/* Component Couple start */
+.home .couple {
+    margin-top: 100px;
+}
+
+.home .couple h3 {
+    font-family: 'Sacramento';
+    font-size: 2.4rem;
+    color: var(--pink);
+}
+
+.home .couple img {
+    width: 100%;
+}
+
+.home .love {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(65px);
+
+
+}
+
+.home .love i {
+    margin: auto;
+    color: var(--pink);
+}
+/* Component Couple end */
+
+/* Info start */
+.info {
+    background-color: var(--bg);
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.info h2 {
+    color: var(--pink);
+    font-family: 'Sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.info .alamat {
+    font-size: 1.1rem;
+}
+
+.info .description {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.info .card {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    border: 1px solid #999;
+}
+
+.info .card-header {
+    border-bottom: 1px solid #999;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+
+}
+
+.info .card-body {
+    font-size: 1rem;
+}
+
+.info .card-footer {
+    border-top: 1px solid #999;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+/* Info end */
+
+/* Story start */
+.story,
+.rspv,
+.gifts {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.story span,
+.gifts span {
+    text-transform: uppercase;
+    color: #666;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.story p,
+.rsvp p,
+.gifts p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.timeline {
+    list-style: none;
+    padding: 1.4rem 0;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.timeline::before {
+    content:'';
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 1px;
+    background-color: #ccc;
+    left: 50%;
+}
+
+.timeline li {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.timeline li::before,
+.timeline li::after {
+    content: '';
+    display: table;
+}
+
+.timeline li::after {
+    clear: both;
+}
+
+.timeline li .timeline-image {
+    width: 160px;
+    height: 160px;
+    background-color:#ccc ;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.timeline li .timeline-panel {
+    width: 40%;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.timeline li .timeline-panel::before {
+   content: '';
+   display: inline-block;
+   position: absolute;
+   border-top: 15px solid transparent;
+   border-left: 15px solid #ccc;
+   border-right: 0 solid #ccc;
+   border-bottom: 15px solid transparent;
+   top: 80px;
+   right: -15px;
+}
+
+.timeline li .timeline-panel::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    top: 81px;
+    right: -13px;
+}
+
+.timeline li.timeline-kanan .timeline-panel {
+    float: right;
+}
+
+.timeline li.timeline-kanan .timeline-panel::before { 
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline li.timeline-kanan .timeline-panel::after { 
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+}
+/* Story end */
+
+/* Component Gallery start */
+.gallery {
+    background-image: url(https://img.freepik.com/free-vector/hand-drawn-flowers-background_79603-1546.jpg?w=740&t=st=1690296090~exp=1690296690~hmac=89f4c4fafa2c30534cda6446f7c7dde2d18605b210eedc1d1e3c59290d6cb75e);
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.gallery h2 {
+    color: var(--pink);
+    font-family: 'Sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+    padding-bottom: 5rem;
+}
+
+/* rsvp start */
+.rsvp {
+    background-color:var(--bg) ;
+}
+.rspv h2 {
+    font-size: 4.5rem;
+}
+.rsvp p {
+    color: white;
+}
+.rsvp form label {
+    color: white;
+}
+.rsvp button {
+    background-color: var(--pink);
+    color: white;
+    border: 1px solid var(--pink);
+}
+.rspv button:hover {
+    background-color: white;
+    color: var(--pink);
+    border: 1px solid white;
+}
+/* rsvp end */
+
+svg {
+    width: 50px;
+    height: 50px;
+}
+/* Component Gallery end */
+
+/* Footer start */
+footer {
+    background-color: rgba(255, 225, 255, 1);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+footer .icons {
+    padding: 1rem 0;
+    
+}
+
+footer .icons a {
+    color: #222;
+    margin: 1rem;
+}
+
+footer svg {
+    width: 2rem;
+    height: 3rem;
+}
+
+footer .links {
+    padding: 0.5rem 0;
+}
+
+footer .links a {
+    color: #222;
+    margin: 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.credit p {
+    text-align: center;
+    text-decoration: none;
+}
+/* Footer end */
+
+/* Musik start */
+.audioIcon {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: muter 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes muter {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* Musik end */
+
+/* Media Query */
+@media (max-width : 1200px) {
+    .home .love {
+        transform: translateX(-50%) translateY(45px);
+    }
+
+}
+
+/* Laptop */
+@media (max-width : 992px) {
+    html {
+        font-size: 75%;
+    }
+
+    .simply-countdown>.simply-section {
+        padding: 70px;
+    }
+    .home .love {
+        display: none;
+    }
+
+    .timeline::before {
+        left: 60px;
+    }
+
+    .timeline li .timeline-image {
+        left: 15px;
+        margin-left: 45px;
+        top: 16px;
+    }
+
+    .timeline li .timeline-panel {
+        width: calc((100% - 200px));
+        float: right;
+    }
+
+    .timeline li .timeline-panel::before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+
+    .timeline li .timeline-panel::after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -13px;
+        right: auto;
+    }
+
+
+}
+
+/* Tablet */
+@media (max-width : 768px) {
+    html {
+        font-size: 65%;
+    }
+
+    .hero {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .simply-countdown>.simply-section {
+        padding: 60px;
+        margin: 5px;
+    }
+
+    .halaman3 .location .info p {
+        font-size: 1.5rem;
+    }
+
+    .mynavbar .nav-link {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .card img {
+        max-width: 100%;
+    }
+
+    .navbar .navbar-extra #link-menu {
+        display: inline-block;
+    }
+
+    .navbar {
+        background-color: rgba(255, 225, 255, 0.8) !important;
+        backdrop-filter: blur(5px) !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+    
+    .navbar .navbar-nav {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 30rem;
+        background-color: rgba(255, 225, 255, 0.8);
+        backdrop-filter: blur(5px) !important;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        color: #0a0a0a;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .navbar .navbar-nav a::after {
+        transform: 0 0;
+        
+    }
+
+    .navbar .navbar-extra #menu-link {
+        display: inline-block;
+    }
+    /* navbar end */
+
+    .navbar-extra svg {
+        color: var(--bg);
+        width: 25px;
+    }
+
+    .timeline li .timeline-image {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+/* Mobile Phone */
+@media (max-width : 576px) {
+    html {
+        font-size: 60%;
+    }
+
+    .simply-countdown>.simply-section {
+        padding: 25px;
+        margin: 3px;
+    }
+
+    .halaman3 .location .info p {
+        font-size: 0.9rem;
+    }
+
+    .wave {
+       margin-top: 20rem;
+    }
+
+    .card img {
+        max-width: 100%;
+    }
+
+    .musik {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+      }
+      
+
+    .musik .playMusic audio {
+        width: 14rem;
+        height: 15px;
+
+    }
+
+    .video .card-body {
+        background-color: #ebeaea;
+    }
+    .video .card-body h2 {  
+        padding: 2rem;
+    }
+    .video video {
+        height: 200px;
+        width: 100%;
+    }
+
+    .timeline li .timeline-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .timeline li .timeline-panel {
+        width: 60%;
+        transform: translateX(-20px);
+    }
+
+    .timeline li .timeline-panel::before {
+        top: 30px;
+    }
+
+    .timeline li .timeline-panel::after {
+        top: 31px;
+    }
+}

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UNDANGAN</title>
+
+    <!-- This featherIcons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- This Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+
+    <!-- This Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- simplyCountdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <!-- This My CSS -->
+    <link rel="stylesheet" href="css/undangan.css" />
+  </head>
+  <body onload="redirectToUndangan()">
+    <!-- Hero start -->
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+      <!-- Pakai DIV boleh pakai MAIN boleh -->
+      <main>
+        <h4>Kepada <span>Bapak/Ibu/Saudara/i,</span></h4>
+        <h1>Jayanto & Jamilah</h1>
+        <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+        <div class="simply-countdown"></div>
+        <a href="#home" id="undangan" class="btn btn-lg mt-4" onclick="lockScroll(); enableScroll()">Lihat Undangan</a>
+      </main>
+    </section>
+    <!-- Hero end -->
+
+    <!-- Navbar No BOOTSTRAP start -->
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top">
+      <a href="#" class="navbar-logo">Wedding<span>Uhuy</span></a>
+
+      <div class="navbar-nav ms-auto">
+        <a href="#hero">Undangan</a>
+        <a href="#home">Home</a>
+        <a href="#info">Info</a>
+        <a href="#story">Story</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#rsvp">RSVP</a>
+        <a href="#gifts">Gifts</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="menu-link"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar No BOOTSTRAP end -->
+
+    <!-- Component start -->
+    <!-- Component home start -->
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>Diselenggarakan pada 20 November 2023 di Jakarta timur, DKI Jakarta</h3>
+            <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu,Sadaura/I, Untuk hadir pada acara pernikahan kami.</p>
+          </div>
+        </div>
+        <!-- Component home end -->
+
+        <!-- Component Couple start -->
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Jayanto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus, suscipit quidem expedita accusantium ex.</p>
+                <p>
+                  Putra dari Bapak Jamal <br />
+                  dan <br />
+                  Ibu Jubaidah
+                </p>
+              </div>
+              <div class="col-4">
+                <img src="gambar/jayanto.jpg" alt="Jayanto" class="img-responsive rounded-circle" />
+              </div>
+            </div>
+          </div>
+
+          <span class="love"><i class="bi bi-heart-fill"></i></span>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img src="gambar/jamilah.jpg" alt="Jayanto" class="img-responsive rounded-circle" />
+              </div>
+              <div class="col-8">
+                <h3>Jamilah</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus, suscipit quidem expedita accusantium ex.</p>
+                <p>
+                  Putri dari Bapak Jajang <br />
+                  dan <br />
+                  Ibu Jumasri
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Component Couple end -->
+
+    <!-- Info start -->
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat">Alamat : Gedung Istana Jamilah, <br />Jalan H. Jaka Tingkir, Kec. Cipayung Kel. Setu, Kota Jakarta timur</p>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.586793126603!2d106.91986349999999!3d-6.317882000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6992b670df5fd1%3A0x1745c3197eb81467!2sJl.%20Kp.%20Kramat%2C%20RT.3%2FRW.4%2C%20Setu%2C%20Kec.%20Cipayung%2C%20Kota%20Jakarta%20Timur%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1694081425170!5m2!1sid!2sid"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <a href="https://goo.gl/maps/JSWUZojGyeqy66fc7" target="_blank " class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
+            <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.</p>
+          </div>
+        </div>
+
+        <!-- This CARD -->
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>08.00 - 10.00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Minggu, 20 November 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi</div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>11.00 - Selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Minggu, 20 November 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Info end -->
+
+    <!-- Story start -->
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Bagaimana Cinta Kami Bersemi</span>
+            <h2>Cerita kami</h2>
+            <p>Cinta Bersemi Dibawah Pohon Rambutan Belakang Rumah</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image" style="background-image: url(gambar/jayanto.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertama Bertemu</h3>
+                    <span>1 Juni 2000</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Pertama bertemu ketika saya (Jayanto) sedang memetik rambutan dibelakang rumah Jamilah dan pada saat itu saya (Jayanto) melihat Jamilah yang sedang jalan kaki sambil memegang Dirijen untuk membeli Minyak yang sedang
+                      disuruh oleh mamaknya. Dan pada saat itu, saya sebagai lelaki idaman para wanita yang Jantan dan Tangguh mencoba untuk memberanikan diri untuk berkenalan dengannya.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-kanan">
+                <div class="timeline-image" style="background-image: url(gambar/jamilah.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mulai Serius</h3>
+                    <span>1 Juni 2005</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Dan beberapa hari setelah mengenal dirinya saya beranikan diri untuk datang bertemu dengan kedua orang tuanya. Tidak lupa saya juga sambil membawakan Martabak dengan menu Kacang Cokelat Special pake Keju dikit, untuk
+                      kedua orang tuanya supaya kelihatan seperti anak muda pada umumnya eaakkk.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="timeline-image" style="background-image: url(gambar/jayanto.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Tunangan</h3>
+                    <span>1 September 2005</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Setelah melewati masa pacaran beberapa tahun, kami memutuskan untuk bertunangan karena kami tidak bisa jika harus terus menerus berpacaran seperti ini, dengan alasan lain karena Jamilah jika saya (Jayanto) tidak cepat
+                      melamarnya (serius). Dia (Jamilah) akan dinikahkan oleh Pak RT yang bernama Joko yang sudah punya anak 7 dan langganan menikah yang sudah 4 kali. LAH COBA ITU!
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-kanan">
+                <div class="timeline-image" style="background-image: url(gambar/jamilah.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Menikah</h3>
+                    <span>1 November 2005</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Dan akhir dari perjalanan cinta kami yang sangat aduhay. Kami akan menikah dan cita-cita ingin mempunyai anak 7 dan akan membuat grup futsal untuk melawan grup futsal dari anak Pak RT Joko. TERIMAKASIH!</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Story end -->
+
+    <!-- Component Gallery start -->
+    <section id="gallery" class="gallery">
+      <div class="row text-center">
+        <h2>Gallery</h2>
+        <div class="col-md-4">
+          <div class="card mb-5">
+            <div class="card-body">
+              <img src="https://img.freepik.com/free-photo/beautiful-archway-decorated-with-floral-composition-outdoors_8353-10972.jpg?size=626&ext=jpg&ga=GA1.1.1944519087.1694256550&semt=sph">Deskripsi Gambar 1</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-5">
+            <div class="card-body">
+              <img src="gambar/jayanto.jpg" alt="Jayanto" />
+              <p class="card-text text-center">Deskripsi Gambar 2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-5">
+            <div class="card-body">
+              <img src="gambar/jamilah.jpg" alt="Jamilah" />
+              <p class="card-text">Deskripsi Gambar 3</p>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="col-md-4 w-100 video">
+          <div class="card mb-5">
+            <div class="card-body">
+              <h2>Video Wedding</h2>
+              <video width="100%" height="500">
+                <source src="video/wedding.mp4.webm" type="video/mp4" />
+              </video>
+              <div class="video-componen">
+                <button onclick="play()" class="btn btn-play">PLAY</button>
+                <button onclick="pause()" class="btn btn-play">PAUSE</button>
+                <button onclick="minimize()" class="btn btn-play">MINIMIZE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Component Gallery end -->
+
+    <!-- Component RSVP start -->
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>Isi form dibawah ini untuk melakukan konfirmasi kehadiran</p>
+          </div>
+        </div>
+
+        <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" action="https://script.google.com/macros/s/AKfycbyow2k8-iTojacgs82id22jjpTVpDoFum9TQoorwZ8REVgFkSURokrFdAgqM2zWIkeX/exec" id="my-form">
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Keterangan</label>
+              <select name="bersama" id="bersama" class="form-select">
+                <option selected>Hadir Bersama</option>
+                <option value="Orang tua">Orang tua</option>
+                <option value="Saudara">Saudara</option>
+                <option value="Pasangan">Pasangan</option>
+                <option value="Sahabat">Sahabat</option>
+                <option value="Teman">Teman</option>
+                <option value="Mantan">Mantan</option>
+                <option value="Jomblo">Jomblowww</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Silahkan pilih kehadiran</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12" style="margin-top: 35px">
+            <button class="btn btn-primary">Kirim</button>
+          </div>
+        </form>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6">
+            <div id="disqus_thread"></div>
+            <script>
+              /**
+               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+              /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+              (function () {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                  s = d.createElement("script");
+                s.src = "https://undangan-uhuy.disqus.com/embed.js";
+                s.setAttribute("data-timestamp", +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Component RSVP end -->
+
+    <!-- Component gifts start -->
+    <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Ungkapan tanda kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem culpa sunt, quidem quisquam unde maiores placeat voluptatibus ad libero quasi saepe est, reprehenderit totam ab, voluptates alias? Blanditiis, hic! Omnis!
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div fw-bold>BCA</div>
+                123456789 - Samsul
+              </li>
+              <li class="list-group-item">
+                <div fw-bold>MANDIRI</div>
+                123456789 - Samsul
+              </li>
+              <li class="list-group-item">
+                <div fw-bold>DKI</div>
+                123456789 - Samsul
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Component gifts end -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="icons">
+        <a href="https://www.instagram.com/belasafira_17"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#undangan">Undangan</a>
+        <a href="#home">Home</a>
+        <a href="#info">Info</a>
+        <a href="#story">Story</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#rsvp">Rsvp</a>
+        <a href="#gifts">Gifts</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">Stipen</a>. | &copy;2023.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Component musik start -->
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="musik/PayungTeduhAkad.mp3" type="audio/mp3" />
+      </audio>
+
+      <div class="audioIcon" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+    <!-- Component musik end -->
+
+    <!-- This Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!-- This featherIcons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- This My JS -->
+    <script src="javascript/undangan.js"></script>
+    <script src="javascript/simply.js"></script>
+  </body>
+</html>
